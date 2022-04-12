@@ -1,9 +1,11 @@
+import AllBoat from "../components/AllBoat"
 
 
 const Boat = () => {
+
   return (
     <> 
-      Boat
+      <AllBoat />
     </>
   )
 }
