@@ -12,10 +12,10 @@ const Haeder = () => {
                         </Link>
                     </div>
                     <div className="space-x-3 hidden sm:flex">
-                        <Link href='/boat'>
+                        <Link href='/boats'>
                             <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>Катера</a>
                         </Link>
-                        <Link href='/yacht'>
+                        <Link href='/yachts'>
                             <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>Яхты</a>
                         </Link>
                         <Link href='/about'>

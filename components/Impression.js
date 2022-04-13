@@ -3,7 +3,7 @@
 const Impression = () => {
     return (
         <div>
-            <div className="container mx-auto py-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
                 <p className="font-bold text-3xl">Впечатления</p>
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 pt-8 px-4 sm:px-0"> 
                     <div className="h-48 rounded-lg bg-gradient-to-r from-cyan-100 to-blue-100 p-4 flex flex-col justify-between">
