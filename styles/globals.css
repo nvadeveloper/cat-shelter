@@ -2,8 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
-  
 .swiper-button-next::after, .swiper-button-prev::after{
-    display: none;
+  display: none;
 }
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 80%;
+}
+.swiper-pagination-bullet {
+  opacity: 60% !important;
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 100% !important;
+  background-color: #ffffff !important;
+}
+
+.swiper-button-disabled{
+  display: none !important;   
+}
+
+@media (max-width: 600px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+}
+

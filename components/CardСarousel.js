@@ -6,54 +6,46 @@ import { Pagination, Navigation } from "swiper";
 import React from "react";
 
 
-const CardWithCorusel = () => {
+const CardСarousel = () => {
 
+    const images = [
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
+    ]
 
     return (
-        <div className="">
+        <>
             <Swiper 
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
+                    el: '.swiper-pagination',
                 }} 
                 navigation={{ 
                     prevEl: '.swiper-button-prev',
                     nextEl: '.swiper-button-next',
                 }}
-                // navigation={true}
                 modules={[Pagination, Navigation]} 
-                className="mySwiper w-96 relative"
+                className="mySwiper w-full"
             >
-                <SwiperSlide>
-                    <img 
-                        className="rounded-xl h-64 border border-gray-300"
-                        src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img 
-                        className="rounded-xl h-64 border border-gray-300"
-                        src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img 
-                        className="rounded-xl h-64 border border-gray-300"
-                        src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img 
-                        className="rounded-xl h-64 border border-gray-300"
-                        src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img 
-                        className="rounded-xl h-64 border border-gray-300"
-                        src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"
-                    />
-                </SwiperSlide>
+                {
+                    images.map((image, key) => (
+                        <SwiperSlide key={key}>
+                            <img 
+                                className="rounded-xl object-cover h-64 w-full border border-gray-300"
+                                src={image}
+                                
+                            />
+                        </SwiperSlide>
+                    ))
+                }
+
+                <div className="swiper-pagination"></div>
                 
                 <div className="swiper-button-next">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,11 +61,8 @@ const CardWithCorusel = () => {
                     </svg>
                 </div>
             </Swiper>
-            
-
-
-        </div>
+        </>
     )
 }
   
-export default CardWithCorusel
+export default CardСarousel

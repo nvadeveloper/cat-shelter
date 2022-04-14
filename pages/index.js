@@ -1,6 +1,4 @@
 import Link from "next/link"
-
-import CardWithCorusel from "../components/CardWithCorusel"
 import Impression from "../components/Impression"
 import IndexPageCover from "../components/IndexPageCover"
 
