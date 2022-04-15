@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Impression from "../components/Impression"
+import IndexPageImpression from "../components/IndexPageImpression"
 import IndexPageBanner from "../components/IndexPageBanner"
 import IndexPageBoats from "../components/IndexPageBoats"
 import IndexPageYachts from "../components/IndexPageYachts"
@@ -10,7 +10,7 @@ const Home = () => {
     <> 
       <main>
         <IndexPageBanner />
-        <Impression />
+        <IndexPageImpression />
         <IndexPageBoats />
         <IndexPageYachts />
         

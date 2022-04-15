@@ -1,6 +1,6 @@
 
 
-const Impression = () => {
+const IndexPageImpression = () => {
     return (
         <section>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -44,4 +44,4 @@ const Impression = () => {
     )
 }
 
-export default Impression
+export default IndexPageImpression
