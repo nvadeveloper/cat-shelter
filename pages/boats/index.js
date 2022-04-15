@@ -1,32 +1,37 @@
-import CardСarousel from "../../components/CardСarousel"
-
+import Link from "next/link"
+import Card from "../../components/Card"
 
 const Boats = () => {
+
+
+const boat = {
+  name: 'Chaparral',
+  tag: 'Бизнес класс',
+  price: '10 000 руб/час',
+  people: '8 человек',
+  images: [
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',        
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
+    'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
+  ],
+}
 
 return (
   <section className="container mx-auto px-4 sm:px-6 lg:px-8">
     <p className="my-10 font-bold text-3xl">Катера</p>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <CardСarousel />
-      <CardСarousel />
-      <CardСarousel />
-      <CardСarousel />
-      <CardСarousel />
-      <CardСarousel />
+      <Link href='#'>
+        <a>
+          <Card images={boat.images} name={boat.name} tag={boat.tag} price={boat.price} people={boat.people}/>
+        </a>
+      </Link>
     </div>
-    
-    {/* <a href="" class="block overflow-hidden rounded-2xl">
-      <img class="object-cover w-full h-56" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
 
-      <div class="p-4 bg-gray-900">
-        <p class="text-xs text-gray-500">website.com</p>
-
-        <h5 class="text-sm text-white">How to position your furniture for positivity</h5>
-
-        <p class="mt-1 text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis aliquid accusamus? Sint, sequi voluptas.</p>
-      </div>
-    </a> */}
   </section>
 )}
 

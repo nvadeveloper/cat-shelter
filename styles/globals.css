@@ -19,9 +19,9 @@
   background-color: #ffffff !important;
 }
 
-.swiper-button-disabled{
+/* .swiper-button-disabled{
   display: none !important;   
-}
+} */
 
 @media (max-width: 600px) {
   .swiper-button-next, .swiper-button-prev {

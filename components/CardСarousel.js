@@ -6,18 +6,7 @@ import { Pagination, Navigation } from "swiper";
 import React from "react";
 
 
-const CardСarousel = () => {
-
-    const images = [
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg',
-        'https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-    ]
-
+const CardСarousel = ({images}) => {
     return (
         <>
             <Swiper 
@@ -31,15 +20,14 @@ const CardСarousel = () => {
                     nextEl: '.swiper-button-next',
                 }}
                 modules={[Pagination, Navigation]} 
-                className="mySwiper w-full"
-            >
+                className="mySwiper w-full rounded-xl border border-gray-300"
+            >   
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
                             <img 
-                                className="rounded-xl object-cover h-64 w-full border border-gray-300"
-                                src={image}
-                                
+                                className="object-cover h-64 w-full"
+                                src={image}          
                             />
                         </SwiperSlide>
                     ))
