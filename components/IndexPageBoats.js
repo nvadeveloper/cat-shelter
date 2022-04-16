@@ -34,7 +34,7 @@ const IndexPageBoats = () => {
 
                 <div className="mt-10 flex justify-center">
                     <Link href='#'>
-                        <a className="border px-6 py-4 rounded-xl bg-black text-white hover:opacity-80">
+                        <a className="border px-5 py-3 rounded-xl bg-black text-white hover:opacity-80">
                             Загрузить еще
                         </a>
                     </Link>

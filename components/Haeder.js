@@ -12,6 +12,9 @@ const Haeder = () => {
                         </Link>
                     </div>
                     <div className="space-x-3 hidden sm:flex">
+                        <Link href='/'>
+                            <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>Главная</a>
+                        </Link>
                         <Link href='/boats'>
                             <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>Катера</a>
                         </Link>
