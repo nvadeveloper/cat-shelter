@@ -1,7 +1,6 @@
 import Link from "next/link"
 import Card from "./Card"
 
-
 const IndexPageBoats = () => {
 
     const boat = {

@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from "swiper";
 import React from "react";
 
-
 const CardСarousel = ({ images }) => {
     return (
         <>

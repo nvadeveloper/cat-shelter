@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { Popover } from '@headlessui/react'
 
-const Haeder = () => {
+const Header = () => {
     return (
         <header>
             <div className="border-b-2 border-gray-100">
@@ -39,7 +38,7 @@ const Haeder = () => {
     )
 }
   
-export default Haeder
+export default Header
 
 
 
