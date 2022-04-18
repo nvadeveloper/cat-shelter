@@ -5,6 +5,11 @@
 .swiper-button-next::after, .swiper-button-prev::after{
   display: none;
 }
+.swiper-button-next, .swiper-button-prev{
+  /* background-color: blueviolet; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
   opacity: 80%;
@@ -19,9 +24,10 @@
   background-color: #ffffff !important;
 }
 
-/* .swiper-button-disabled{
+.swiper-button-disabled{
+  /* opacity: 10% !important; */
   display: none !important;   
-} */
+}
 
 @media (max-width: 600px) {
   .swiper-button-next, .swiper-button-prev {

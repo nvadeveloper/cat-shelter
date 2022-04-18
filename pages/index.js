@@ -4,6 +4,7 @@ import IndexPageBoats from "../components/IndexPageBoats"
 import IndexPageYachts from "../components/IndexPageYachts"
 
 const Home = () => {
+
   return (
     <>
       <IndexPageBanner />

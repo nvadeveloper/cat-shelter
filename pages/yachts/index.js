@@ -19,11 +19,21 @@ const Yachts = () => {
     ],
   }
 
+  const nav = [
+    'до 7 000',
+    'от 7000 до 15 000',
+    'от 15 000',
+    'до 5 человек',
+    'от 5 до 10 человек',
+    'от 10 человек',
+  ]
+
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8">
       <p className="my-10 font-bold text-3xl">Катера</p>
       <nav>
-        <ul className="mb-6 flex flex-wrap overflow-x-scroll">
+     
+        <ul className="mb-6 flex overflow-x-scroll whitespace-nowrap pb-4">
           <li className="mr-3 rounded-2xl py-3 px-5 border text-gray-900 border-gray-400 hover:border-gray-900 cursor-pointer">
             до 7 000
           </li>
@@ -33,7 +43,6 @@ const Yachts = () => {
           <li className="mr-3 rounded-2xl py-3 px-5 border text-gray-900 border-gray-400 hover:border-gray-900 cursor-pointer">
             от 15 000
           </li>
-
           <li className="mr-3 rounded-2xl py-3 px-5 border text-gray-900 border-gray-400 hover:border-gray-900 cursor-pointer">
             до 5 человек
           </li>
@@ -57,3 +66,13 @@ const Yachts = () => {
 }
 
 export default Yachts
+
+
+fetch('http://localhost:1337/api/boats', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
+  .then(response => response.json())
+  .then(data => console.log(data));
