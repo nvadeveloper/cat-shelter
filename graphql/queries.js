@@ -8,7 +8,7 @@ query {
       attributes {
         name 
         price
-				person
+		person
         tag
         images {
           data {

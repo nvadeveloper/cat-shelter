@@ -4,6 +4,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from "swiper";
 import React from "react";
+import Image from "next/image";
 
 const CardСarousel = ({ images }) => {
     return (
@@ -24,10 +25,24 @@ const CardСarousel = ({ images }) => {
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <img
+                            <div className="h-64 w-full">
+                                <Image 
+                                    
+                                    src={image}
+                                    layout='fill'
+                                    // width='390px'
+                                    // height='256px'
+                                    // layout="fill"
+                                    // objectFit="none"
+                                    // alt='image'
+                                    // quality={100}
+                                    className="object-cover h-64 w-full"
+                                />
+                            {/* <img
                                 className="object-cover h-64 w-full"
                                 src={image}
-                            />
+                            /> */}
+                            </div>
                         </SwiperSlide>
                     ))
                 }
