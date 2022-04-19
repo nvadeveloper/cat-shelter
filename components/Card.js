@@ -13,7 +13,7 @@ const Card = ({ images, name, tag, price, people, slug }) => {
                         <p className="text-sm text-gray-500">{tag}</p>
                     </div>
                     <div className="flex flex-col items-end">
-                        <p className="text-sm text-gray-900 mt-2">{price}</p>
+                        <p className="text-sm text-gray-900 mt-2">{price} руб/час</p>
                         <p className="text-sm text-gray-900">{people}</p>
                     </div>
                 </div>
