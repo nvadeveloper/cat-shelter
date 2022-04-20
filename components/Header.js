@@ -1,16 +1,5 @@
 import Link from "next/link"
 
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-
-// const classNames = (...classes) => {
-//     return classes.filter(Boolean).join(' ')
-// }
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 const Header = () => {
 
     const menus = [
