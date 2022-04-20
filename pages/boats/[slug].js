@@ -57,31 +57,41 @@ const Boat = () => {
               {boat.name}
             </h1>
 
-            <div className="flex">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <div className="flex mt-8 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
               </svg>
-              <span>Колличество мест: 12 человек</span>
+              <span className="ml-3 text-lg font-normal">Колличество мест: 12 человек</span>
             </div>
 
-            <div className="flex">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            <div className="flex mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
               </svg>
-              <span>Стоимость аренды: 10 000 руб/час</span>
+              <span className="ml-3 text-lg font-normal">Стоимость аренды: 10 000 руб/час</span>
             </div>
 
-            <div className="flex">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+            
+
+            <div className="flex mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
               </svg>
-              <span>Бизнес класс</span>
+              <span className="ml-3 text-lg font-normal">+7 991 114 21 31 </span>
             </div>
+
+
+
+
+
+
+
+
 
             <div class="flex items-center -space-x-4 hover:space-x-1">
 
               <button
-                class="z-10 block p-4 text-green-700 transition-all bg-green-100 border-2 border-white rounded-full active:bg-green-50 hover:scale-110 focus:outline-none focus:ring"
+                class="z-10 block p-4 text-blue-700 transition-all bg-blue-100 border-2 border-white rounded-full active:bg-green-50 hover:scale-110 focus:outline-none focus:ring"
                 type="button"
               >
                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,20 +100,37 @@ const Boat = () => {
               </button>
 
               <button
-                class="z-20 block p-4 text-blue-700 transition-all bg-blue-100 border-2 border-white rounded-full active:bg-blue-50 hover:scale-110 focus:outline-none focus:ring"
+                class="z-20 block p-4 text-blue-700 transition-all bg-blue-400 border-2 border-white rounded-full active:bg-blue-50 hover:scale-110 focus:outline-none focus:ring"
                 type="button"
               >
-                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_14_22)">
+                    <path d="M45.9409 4.43578L1.64329 21.6063C-0.139307 22.4059 -0.742244 24.0073 1.21236 24.8763L12.5767 28.5064L40.054 11.4371C41.5542 10.3655 43.0902 10.6513 41.7686 11.83L18.1692 33.3081L17.4279 42.3975C18.1146 43.801 19.3718 43.8075 20.1737 43.11L26.7029 36.9001L37.885 45.3168C40.4821 46.8623 41.8953 45.8649 42.454 43.0322L49.7886 8.12307C50.5501 4.63617 49.2514 3.09984 45.9409 4.43578Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_14_22">
+                      <rect width="50" height="50" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </button>
 
               <button
-                class="z-30 block p-4 text-red-700 transition-all bg-red-100 border-2 border-white rounded-full hover:scale-110 focus:outline-none focus:ring active:bg-red-50"
+                class="z-30 block p-4 text-red-700 transition-all bg-green-400 border-2 border-white rounded-full hover:scale-110 focus:outline-none focus:ring active:bg-red-50"
                 type="button"
               >
-                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.95459 47.1584C4.15482 43.2834 5.54595 39.5993 6.81777 35.7961C-1.61291 21.0511 8.8205 4.45183 22.9521 3.07296C36.2946 1.77092 47.2341 11.3546 47.2673 24.4339C47.3021 38.2346 33.9173 49.8232 18.8616 45.113C17.726 44.7577 16.3207 43.6 14.9985 43.5223C13.1505 43.4134 10.7287 44.7402 8.86277 45.3402C6.81754 45.9982 5.03914 46.6575 2.95459 47.1584ZM15.453 39.4321C27.611 46.8107 42.1691 38.5346 43.4041 26.4791C44.5219 15.5657 35.8078 5.85524 24.0882 6.70887C10.7087 7.68319 2.67186 23.6541 10.908 35.3416C10.1789 37.3396 9.49663 39.3843 8.86277 41.4773C11.095 40.8309 13.1528 40.0102 15.453 39.4321Z" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2252 14.208C21.504 16.883 23.4822 20.8396 20.2252 22.6162C21.8793 26.113 24.614 28.5291 28.1786 30.1153C29.364 29.3312 30.1424 28.1401 31.1329 27.1612C33.202 27.9705 35.1361 28.9146 36.8138 30.1153C36.9863 34.0246 33.692 35.4703 30.9056 35.3419C25.0272 35.0714 16.9479 27.6448 14.9986 22.1616C13.8418 18.9082 15.1722 12.6855 20.2252 14.208Z" fill="white" />
+                </svg>
+              </button>
+
+              <button
+                class="z-30 block p-4 text-red-700 transition-all bg-pink-400 border-2 border-white rounded-full hover:scale-110 focus:outline-none focus:ring active:bg-red-50"
+                type="button"
+              >
+                <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3778 3.47782C16.9688 8.89745 20.9766 16.9136 14.3778 20.513C17.729 27.5977 23.2697 32.4929 30.4916 35.7064C32.8934 34.1178 34.4704 31.7046 36.4771 29.7213C40.6692 31.3611 44.5877 33.2738 47.9868 35.7064C48.3363 43.6268 41.6619 46.5558 36.0167 46.2957C24.1068 45.7477 7.7379 30.7012 3.78852 19.5921C1.44478 13.0006 4.14032 0.393189 14.3778 3.47782Z" fill="white" />
                 </svg>
               </button>
             </div>
@@ -113,64 +140,11 @@ const Boat = () => {
           </div>
         </div>
 
-        {/* <div className="flex overflow-x-scroll whitespace-nowrap rounded-xl gap-4">
-          {images.map((image) => (
-            <img src={image} className="h-96"/>
-          ))}
+
+        <div className="mt-10">
+          <p className="mb-4 font-bold text-3xl">Описание</p>
+          <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
-        <div className="flex flex-row">
-          <img src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg" className="w-2/4"/>
-          <div className="">
-            <img src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"/>
-            <img src="https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg"/>
-          </div>
-        </div>
-        <p>{boat.description}</p> */}
-        {/* 
-              <Swiper
-                pagination={{
-                    clickable: true,
-                    dynamicBullets: true,
-                    el: '.swiper-pagination',
-                }}
-                navigation={{
-                    prevEl: '.swiper-button-prev',
-                    nextEl: '.swiper-button-next',
-                }}
-                modules={[Pagination, Navigation]}
-                className="mySwiper w-1/2 rounded-xl border border-gray-300"
-            >
-                {
-                    images.map((image, key) => (
-                        <SwiperSlide key={key}>
-                            <div className="h-96 w-full bg-gray-300">
-                                <Image 
-                                    src={image}
-                                    layout='fill'
-                                    alt='Rent Boat image'
-                                />
-                            </div>
-                        </SwiperSlide>
-                    ))
-                }
-
-                <div className="swiper-pagination"></div>
-
-                <div className="swiper-button-prev">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 18.2929C17.6834 18.6834 17.6834 19.3166 17.2929 19.7071C16.9024 20.0976 16.2692 20.0976 15.8787 19.7071L12.5858 16.4142C11.8047 15.6332 11.8047 14.3668 12.5858 13.5858L15.8787 10.2929C16.2692 9.90237 16.9024 9.90237 17.2929 10.2929C17.6834 10.6834 17.6834 11.3166 17.2929 11.7071L14 15L17.2929 18.2929Z" fill="#428BF9"/>
-                    </svg>
-                </div>
-
-                <div className="swiper-button-next">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 11.7071C11.9024 11.3166 11.9024 10.6834 12.2929 10.2929C12.6834 9.90237 13.3166 9.90237 13.7071 10.2929L17 13.5858C17.7811 14.3668 17.7811 15.6332 17 16.4142L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L15.5858 15L12.2929 11.7071Z" fill="#428BF9"/>
-                    </svg>
-                </div>
-            </Swiper> */}
       </div>
     </section>
   )
