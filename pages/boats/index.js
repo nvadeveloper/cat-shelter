@@ -4,7 +4,6 @@ import { GET_ALL_BOATS } from "../../graphql/queries"
 
 const Boats = ({ boats }) => {
 
-
   return (
     <section>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,7 +11,7 @@ const Boats = ({ boats }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {
-            boats.map((boat) => {
+            boats.map(boat => {
               let name = boat.attributes.name
               let tag = boat.attributes.tag
               let price = boat.attributes.price
@@ -20,12 +19,18 @@ const Boats = ({ boats }) => {
               let slug = boat.id
               let images = []
 
-              boat.attributes.images.data.map((image) => {
-                images.push(image.attributes.url)
-              })
+              boat.attributes.images.data.map(image => images.push(image.attributes.url))
+              
               return (
                 <>
-                  <Card images={images} name={name} tag={tag} price={price} people={people} slug={`/boats/${slug}`} />
+                  <Card 
+                    images={images} 
+                    name={name} 
+                    tag={tag} 
+                    price={price} 
+                    people={people} 
+                    slug={`/boats/${slug}`}
+                  />
                 </>
               )
             })

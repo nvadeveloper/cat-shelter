@@ -6,7 +6,10 @@ const nextConfig = {
       'res.cloudinary.com',
       'spbkater.ru'
     ],
-},
+  },
+  experimental: {
+    scrollRestoration: true,
+  },
 }
 
 module.exports = nextConfig

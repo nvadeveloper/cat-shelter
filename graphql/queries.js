@@ -8,7 +8,7 @@ query {
       attributes {
         name 
         price
-		person
+		    person
         tag
         images {
           data {
@@ -22,4 +22,13 @@ query {
   }
 }`
 
-export { GET_ALL_BOATS }
+const GET_BOAT_SLUG = gql`
+query {
+	boats {
+    data {
+      id
+    }
+  }
+}`
+
+export { GET_ALL_BOATS, GET_BOAT_SLUG }

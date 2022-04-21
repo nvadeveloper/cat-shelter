@@ -16,9 +16,6 @@ const IndexPageBanner = () => {
                             Подобрать катер
                         </a>
                     </Link>
-                    {/* <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-900">
-                        Hello, world!
-                    </h1> */}
                 </div>
             </div>
         </section>

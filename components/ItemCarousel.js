@@ -2,13 +2,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Mousewheel } from "swiper";
 import Image from "next/image";
 
-const CardСarousel = ({ images }) => {
+const ItemCarousel = ({ images }) => {
     return (
         <>
             <Swiper
+                mousewheel={true}
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
@@ -18,17 +19,18 @@ const CardСarousel = ({ images }) => {
                     prevEl: '.swiper-button-prev',
                     nextEl: '.swiper-button-next',
                 }}
-                modules={[Pagination, Navigation]}
-                className="mySwiper w-full rounded-xl border border-gray-300"
+                modules={[Pagination, Navigation, Mousewheel]}
+                className="mySwiper w-full rounded-xl"
             >
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <div className="h-64 w-full bg-gray-300 relative">
+                            <div className="h-96 w-full ">
                                 <Image 
                                     src={image}
                                     layout='fill'
                                     alt='Rent Boat image'
+                                    
                                 />
                             </div>
                         </SwiperSlide>
@@ -55,4 +57,4 @@ const CardСarousel = ({ images }) => {
     )
 }
 
-export default CardСarousel
+export default ItemCarousel
