@@ -58,36 +58,46 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      boatItem: data.boats.data
+      boat: data.boats.data
     }
   }
 }
 
-const Boat = ({ boatItem }) => {
+const Boat = ({ boat }) => {
 
-  let images = [] 
+  let name = boat[0].attributes.name
+  let price = boat[0].attributes.price
+  let person = boat[0].attributes.person
+  let tag = boat[0].attributes.tag
 
-  boatItem[0].attributes.images.data.map((image) => {
-    images.push(image.attributes.url)
-  })
 
-  // console.log('boatItem alalallala', images)
+  let images = []
+  boat[0].attributes.images.data.map(image => images.push(image.attributes.url))
 
   return (
     <section>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <PreviousSlideButton />
-        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ItemCarousel images={images} />
+          <div>
+            <p className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-700">{name}</p>
+            <p>{price}</p>
+            <p>{person}</p>
+            <p>{tag}</p>
+          </div>
+        </div>
+{/* 
         <div className='w-1/2'>
-          <ItemCarousel images={images}/>
+          <ItemCarousel images={images} />
         </div>
 
-        <p>{boatItem[0].attributes.name}</p>
-        <p>{boatItem[0].attributes.price}</p>
-        <p>{boatItem[0].attributes.person}</p>
-        <p>{boatItem[0].attributes.tag}</p>
-        
+        <p>{name}</p>
+        <p>{price}</p>
+        <p>{person}</p>
+        <p>{tag}</p>
 
+ */}
 
       </div>
       {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10"      >

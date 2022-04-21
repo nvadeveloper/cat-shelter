@@ -6,7 +6,7 @@ const PreviousSlideButton = () => {
 
     return (
         <button
-            className="flex text-gray-500 hover:text-gray-700 items-center"
+            className="flex text-gray-400 hover:text-gray-600 items-center mb-4"
             type="button" onClick={() => router.back()}
         >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

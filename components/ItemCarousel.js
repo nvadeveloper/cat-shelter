@@ -25,12 +25,12 @@ const ItemCarousel = ({ images }) => {
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <div className="h-96 w-full ">
+                            <div className="h-64 sm:h-96 w-full ">
                                 <Image 
                                     src={image}
                                     layout='fill'
                                     alt='Rent Boat image'
-                                    
+                                    objectFit="cover"
                                 />
                             </div>
                         </SwiperSlide>
