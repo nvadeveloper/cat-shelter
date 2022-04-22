@@ -90,7 +90,7 @@ const Boat = ({ boat }) => {
 
           <div className="col-span-2 p-0 sm:p-10 ">
             <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600">
-              {name}
+              Аренда катера {name}
             </span>
 
             <div className="flex items-center my-5">
@@ -100,7 +100,7 @@ const Boat = ({ boat }) => {
 
             <div className="flex items-center my-5">
               <BsWallet2 className="text-blue-500 w-6 h-6" />
-              <span className="text-xl ml-3">{price} руб/час</span>
+              <span className="text-xl ml-3">Стоимость аренды: {price} руб/час</span>
             </div>
 
             <div className="flex items-center my-5">
@@ -113,6 +113,10 @@ const Boat = ({ boat }) => {
               <span className="text-xl ml-3">+7 991 114 21 31</span>
             </div>
           </div>
+
+          <button>
+            Заказать
+          </button>
         </div>
 
         {description

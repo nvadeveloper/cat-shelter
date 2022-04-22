@@ -26,7 +26,7 @@ const ItemCarousel = ({ images }) => {
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <div className="h-64 sm:h-[550px] w-full ">
+                            <div className="h-64 sm:h-[500px] w-full ">
                                 <Image 
                                     src={image}
                                     layout='fill'
