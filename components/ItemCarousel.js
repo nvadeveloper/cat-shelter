@@ -10,6 +10,7 @@ const ItemCarousel = ({ images }) => {
         <>
             <Swiper
                 mousewheel={true}
+                loop={true}
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
@@ -25,7 +26,7 @@ const ItemCarousel = ({ images }) => {
                 {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <div className="h-64 sm:h-96 w-full ">
+                            <div className="h-64 sm:h-[550px] w-full ">
                                 <Image 
                                     src={image}
                                     layout='fill'
