@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client"
 import Card from "../../components/Card"
-import { GET_ALL_BOATS } from "../../graphql/queries"
+import { GET_ALL_YACHTS } from "../../graphql/queries"
 
 const Yachts = ({ yachts }) => {
 
@@ -46,7 +46,7 @@ export const getStaticProps = async () => {
   })
 
   const { data } = await client.query({
-    query: GET_ALL_BOATS
+    query: GET_ALL_YACHTS
   })
 
   return {
