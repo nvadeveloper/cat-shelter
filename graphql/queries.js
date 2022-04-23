@@ -53,4 +53,13 @@ query {
   }
 }`
 
-export { GET_ALL_BOATS, GET_ALL_YACHTS, GET_BOAT_SLUG }
+const GET_YACHT_SLUG = gql`
+query {
+	yachts {
+    data {
+      id
+    }
+  }
+}`
+
+export { GET_ALL_BOATS, GET_ALL_YACHTS, GET_BOAT_SLUG, GET_YACHT_SLUG }
