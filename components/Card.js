@@ -1,7 +1,7 @@
 import Link from "next/link"
 import CardСarousel from "./CardСarousel"
 
-const Card = ({ images, name, tag, price, people, slug }) => {
+const Card = ({ images, name, tag, price, people, slug, rating }) => {
 
     return (
         <Link href={slug}>

@@ -82,20 +82,20 @@ const Boat = ({ boat }) => {
     <section>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <PreviousSlideButton />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-5">
 
           <div className="col-span-3">
             <ItemCarousel images={images} />
-            
           </div>
 
           <div className="col-span-2 p-0 sm:p-10 ">
-          
-            <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600">
-              Аренда катера {name}
+            <span 
+              className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600"
+            >
+              {name}
             </span>
-            <div  className="border my-4"/>
+            <div className="border my-4" />
             <div className="flex items-center my-5">
               <BsPatchCheck className="text-blue-500 w-6 h-6" />
               <span className="text-xl ml-3">{tag}</span>
@@ -120,7 +120,7 @@ const Boat = ({ boat }) => {
               Заказать
             </button>
 
-            
+
           </div>
 
 

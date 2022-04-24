@@ -32,7 +32,7 @@ const IndexPageYachts = () => {
                 </div>
 
                 <div className="mt-10 flex justify-center">
-                    <Link href='#'>
+                    <Link href='/yachts'>
                         <a className="border px-5 py-3 rounded-xl bg-black text-white hover:opacity-80">
                             Загрузить еще
                         </a>
