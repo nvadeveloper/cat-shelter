@@ -38,11 +38,12 @@ export const getStaticProps = async ({ params }) => {
         data {
           id
           attributes {
+            tag
             name
             price
             person
-            tag
             description
+            phoneNumber
              images {
               data {
                 id
@@ -66,11 +67,12 @@ export const getStaticProps = async ({ params }) => {
 
 const Boat = ({ boat }) => {
 
+  let tag = boat[0].attributes.tag
   let name = boat[0].attributes.name
   let price = boat[0].attributes.price
   let person = boat[0].attributes.person
-  let tag = boat[0].attributes.tag
   let description = boat[0].attributes.description
+  let phoneNumber = yacht[0].attributes.phoneNumber
   let images = []
 
   boat[0].attributes.images.data.map(image => images.push(image.attributes.url))
@@ -108,7 +110,7 @@ const Boat = ({ boat }) => {
 
             <div className="flex items-center my-5">
               <BsTelephoneOutbound className="text-blue-500 w-6 h-6" />
-              <span className="text-xl ml-3">+7 991 114 21 31</span>
+              <span className="text-xl ml-3">{phoneNumber}</span>
             </div>
 
             <button className="text-xl border px-10 py-3 rounded-xl bg-blue-600 text-white hover:opacity-80">
