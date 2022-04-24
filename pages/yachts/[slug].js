@@ -73,14 +73,13 @@ const Yacht = ({ yacht }) => {
   let tag = yacht[0].attributes.tag
   let description = yacht[0].attributes.description
   let images = []
-  
+
   yacht[0].attributes.images.data.map(image => images.push(image.attributes.url))
 
   return (
     <section>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <PreviousSlideButton />
-
         <div className="grid grid-cols-1 md:grid-cols-5">
 
           <div className="col-span-3">
@@ -117,13 +116,8 @@ const Yacht = ({ yacht }) => {
             <button className="text-xl border px-10 py-3 rounded-xl bg-blue-600 text-white hover:opacity-80">
               Заказать
             </button>
-
-
           </div>
-
-
         </div>
-
         {description
           ? (
             <div className="mt-10">
@@ -137,7 +131,6 @@ const Yacht = ({ yacht }) => {
           )
           : console.log('No description')
         }
-
       </div>
     </section>
   )
