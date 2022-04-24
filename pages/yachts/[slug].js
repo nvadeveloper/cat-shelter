@@ -1,9 +1,10 @@
 import ItemCarousel from "../../components/ItemCarousel";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
-import { GET_BOAT_SLUG } from "../../graphql/queries"
+import { GET_YACHT_SLUG } from "../../graphql/queries"
 import PreviousSlideButton from "../../components/PreviousSlideButton";
 import ReactMarkdown from "react-markdown";
 import { BsWallet2, BsPatchCheck, BsPeople, BsTelephoneOutbound } from 'react-icons/bs';
+
 
 export const getStaticPaths = async () => {
   const client = new ApolloClient({
@@ -12,11 +13,11 @@ export const getStaticPaths = async () => {
   })
 
   const { data } = await client.query({
-    query: GET_BOAT_SLUG
+    query: GET_YACHT_SLUG
   })
 
-  const paths = data.boats.data.map(boat => ({
-    params: { slug: boat.id }
+  const paths = data.yachts.data.map(yacht => ({
+    params: { slug: yacht.id }
   }))
 
   return {
@@ -34,7 +35,7 @@ export const getStaticProps = async ({ params }) => {
   const { data } = await client.query({
     query: gql`
     query {
-      boats (filters: { id: { eq: ${params.slug} }}) {
+      yachts (filters: { id: { eq: ${params.slug} }}) {
         data {
           id
           attributes {
@@ -59,21 +60,21 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      boat: data.boats.data
+      yacht: data.yachts.data
     }
   }
 }
 
-const Boat = ({ boat }) => {
+const Yacht = ({ yacht }) => {
 
-  let name = boat[0].attributes.name
-  let price = boat[0].attributes.price
-  let person = boat[0].attributes.person
-  let tag = boat[0].attributes.tag
-  let description = boat[0].attributes.description
+  let name = yacht[0].attributes.name
+  let price = yacht[0].attributes.price
+  let person = yacht[0].attributes.person
+  let tag = yacht[0].attributes.tag
+  let description = yacht[0].attributes.description
   let images = []
   
-  boat[0].attributes.images.data.map(image => images.push(image.attributes.url))
+  yacht[0].attributes.images.data.map(image => images.push(image.attributes.url))
 
   return (
     <section>
@@ -87,7 +88,7 @@ const Boat = ({ boat }) => {
           </div>
 
           <div className="col-span-2 p-0 sm:p-10 ">
-            <span 
+            <span
               className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600"
             >
               {name}
@@ -142,4 +143,4 @@ const Boat = ({ boat }) => {
   )
 }
 
-export default Boat
+export default Yacht
