@@ -7,10 +7,10 @@ const Header = () => {
             title: 'Главная',
             href: '/',
         },
-        {
-            title: 'Теплоходы',
-            href: '/ships',
-        },
+        // {
+        //     title: 'Теплоходы',
+        //     href: '/ships',
+        // },
         {
             title: 'Катера',
             href: '/boats',

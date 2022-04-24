@@ -30,6 +30,7 @@ const CardСarousel = ({ images }) => {
                                     layout='fill'
                                     objectFit='cover'
                                     alt='Rent Boat image'
+                                    // placeholder='blur'
                                 />
                             </div>
                         </SwiperSlide>

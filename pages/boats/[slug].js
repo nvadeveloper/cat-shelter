@@ -108,7 +108,7 @@ const Boat = ({ boat }) => {
 
             <div className="flex items-center my-5">
               <BsPeople className="text-blue-500 w-6 h-6" />
-              <span className="text-xl ml-3">Вместимость: {person}</span>
+              <span className="text-xl ml-3">Вместимость: {person} человек</span>
             </div>
 
             <div className="flex items-center my-5">

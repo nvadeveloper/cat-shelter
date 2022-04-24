@@ -6,8 +6,9 @@ const IndexPageImpression = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
                 <p className="font-bold text-3xl">Впечатления</p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-10">
-                    <div className="h-48 rounded-lg bg-gradient-to-r from-cyan-100 to-blue-100 p-4 flex flex-col justify-between ">
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-6 ">
+
+                    <div className="h-48 rounded-lg bg-gradient-to-r from-cyan-100 to-blue-100 p-4 flex flex-col justify-between">
                         <p className="font-bold text-xl">Экскурсии <br />на катере</p>
                         <button className="flex hover:text-blue-600">
                             <span>Подробнее</span>
