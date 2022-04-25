@@ -120,19 +120,14 @@ const Yacht = ({ yacht }) => {
             </button>
           </div>
         </div>
-        {description
-          ? (
-            <div className="mt-10">
-              <p className="font-bold text-3xl mb-4">Описание</p>
-              <div className="prose max-w-full">
-                <ReactMarkdown>
-                  {description}
-                </ReactMarkdown>
-              </div>
-            </div>
-          )
-          : console.log('No description')
-        }
+        <div className="mt-10">
+          <p className="font-bold text-3xl mb-4">Описание</p>
+          <div className="prose max-w-full">
+            <ReactMarkdown>
+              {description}
+            </ReactMarkdown>
+          </div>
+        </div>
       </div>
     </section>
   )

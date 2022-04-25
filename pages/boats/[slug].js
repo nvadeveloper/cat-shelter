@@ -72,7 +72,7 @@ const Boat = ({ boat }) => {
   let price = boat[0].attributes.price
   let person = boat[0].attributes.person
   let description = boat[0].attributes.description
-  let phoneNumber = yacht[0].attributes.phoneNumber
+  let phoneNumber = boat[0].attributes.phoneNumber
   let images = []
 
   boat[0].attributes.images.data.map(image => images.push(image.attributes.url))
@@ -87,7 +87,7 @@ const Boat = ({ boat }) => {
           </div>
 
           <div className="col-span-2 p-0 sm:p-10 ">
-            <span 
+            <span
               className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600"
             >
               {name}
@@ -118,19 +118,14 @@ const Boat = ({ boat }) => {
             </button>
           </div>
         </div>
-        {description
-          ? (
-            <div className="mt-10">
-              <p className="font-bold text-3xl mb-4">Описание</p>
-              <div className="prose max-w-full">
-                <ReactMarkdown>
-                  {description}
-                </ReactMarkdown>
-              </div>
-            </div>
-          )
-          : console.log('No description')
-        }
+        <div className="mt-10">
+          <p className="font-bold text-3xl mb-4">Описание</p>
+          <div className="prose max-w-full">
+            <ReactMarkdown>
+              {description}
+            </ReactMarkdown>
+          </div>
+        </div>
       </div>
     </section>
   )
