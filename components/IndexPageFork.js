@@ -10,7 +10,7 @@ const IndexPageFork = () => {
 
                 <div className="grid grid-cols-2 grid-row-2 gap-6 h-[70vh]">
 
-                    <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-700 row-span-2 rounded-xl p-12 flex flex-col justify-between">
+                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 row-span-2 rounded-xl p-12 flex flex-col justify-between">
                         <p className="font-bold text-white text-5xl">Найти катера</p>
                         <Link href='/boats'>
                             <a className="text-center border rounded-xl bg-white w-40 py-4">
@@ -19,19 +19,19 @@ const IndexPageFork = () => {
                         </Link>
                     </div>
 
-                    <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-700 rounded-xl p-12 flex flex-col justify-between">
+                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 rounded-xl p-12 flex flex-col justify-between">
                         <p className="font-bold text-white text-5xl">Найти яхту</p>
-                        <Link href='/boats'>
+                        <Link href='/yachts'>
                             <a className="text-center border rounded-xl bg-white w-40 py-4">
                                 Начать поиск
                             </a>
                         </Link>
                     </div>
 
-                    <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-700 rounded-xl p-12 flex flex-col justify-between">
+                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 rounded-xl p-12 flex flex-col justify-between">
                         <p className="font-bold text-white text-5xl">Найти теплоход</p>
-                        <Link href='/boats'>
-                            <a className="text-center border rounded-xl bg-white w-40 py-4">
+                        <Link href='/ships'>
+                            <a className="text-center border rounded-xl bg-white w-40 py-4 hover:scale-105 hover:shadow-xl transition">
                                 Начать поиск
                             </a>
                         </Link>

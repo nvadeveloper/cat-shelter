@@ -20,7 +20,6 @@ const Card = ({ images, name, tag, price, people, slug, rating }) => {
                         <p className="text-sm text-gray-600">{people} человек</p>
                     </div>
                 </div>
-                
             </a>
         </Link>
     )

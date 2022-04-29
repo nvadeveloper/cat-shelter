@@ -27,7 +27,7 @@ const ItemCarousel = ({ images }) => {
                     images.map((image, key) => (
                         <SwiperSlide key={key}>
                             <div className="h-64 sm:h-[500px] w-full ">
-                                <Image 
+                                <Image
                                     src={image}
                                     layout='fill'
                                     alt='Rent Boat image'
@@ -41,16 +41,48 @@ const ItemCarousel = ({ images }) => {
                 <div className="swiper-pagination"></div>
 
                 <div className="swiper-button-prev">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2929 18.2929C17.6834 18.6834 17.6834 19.3166 17.2929 19.7071C16.9024 20.0976 16.2692 20.0976 15.8787 19.7071L12.5858 16.4142C11.8047 15.6332 11.8047 14.3668 12.5858 13.5858L15.8787 10.2929C16.2692 9.90237 16.9024 9.90237 17.2929 10.2929C17.6834 10.6834 17.6834 11.3166 17.2929 11.7071L14 15L17.2929 18.2929Z" fill="#428BF9"/>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="none"
+                        viewBox="0 0 30 30"
+                    >
+                        <path
+                            fill="#fff"
+                            d="M15 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15z"
+                        >
+                        </path>
+                        <path
+                            fill="#428BF9"
+                            fillRule="evenodd"
+                            d="M17.293 18.293a1 1 0 01-1.414 1.414l-3.293-3.293a2 2 0 010-2.828l3.293-3.293a1 1 0 111.414 1.414L14 15l3.293 3.293z"
+                            clipRule="evenodd"
+                        >
+                        </path>
                     </svg>
                 </div>
 
                 <div className="swiper-button-next">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 11.7071C11.9024 11.3166 11.9024 10.6834 12.2929 10.2929C12.6834 9.90237 13.3166 9.90237 13.7071 10.2929L17 13.5858C17.7811 14.3668 17.7811 15.6332 17 16.4142L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L15.5858 15L12.2929 11.7071Z" fill="#428BF9"/>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="none"
+                        viewBox="0 0 30 30"
+                    >
+                        <path
+                            fill="#fff"
+                            d="M15 30c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15z"
+                        >
+                        </path>
+                        <path
+                            fill="#428BF9"
+                            fillRule="evenodd"
+                            d="M12.293 11.707a1 1 0 011.414-1.414L17 13.586a2 2 0 010 2.828l-3.293 3.293a1 1 0 01-1.414-1.414L15.586 15l-3.293-3.293z"
+                            clipRule="evenodd"
+                        >
+                        </path>
                     </svg>
                 </div>
             </Swiper>
