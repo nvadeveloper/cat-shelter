@@ -1,118 +1,61 @@
 import Image from "next/image"
 import Link from "next/link"
+import WhiteButton from "./elements/WhiteButton"
 
 
 const IndexPageFork = () => {
     return (
         <section>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-                {/* <p className="font-bold text-3xl">Впечатления</p> */}
-
-                <div className="grid grid-cols-2 grid-row-2 gap-6 h-[70vh]">
-
-                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 row-span-2 rounded-xl p-12 flex flex-col justify-between">
-                        <p className="font-bold text-white text-5xl">Найти катера</p>
-                        <Link href='/boats'>
-                            <a className="text-center border rounded-xl bg-white w-40 py-4">
-                                Начать поиск
-                            </a>
-                        </Link>
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-2 md:grid-row-2">
+                    <div className="md:row-span-2 h-80 md:h-full relative">
+                        <img
+                            src='https://peacepalacelibrary.nl/sites/default/files/styles/featured_image/public/2020-07/Law%20of%20the%20Sea_0.jpg?itok=l6tllHxz'
+                            className="rounded-xl w-full h-full object-center object-cover brightness-50"
+                        />
+                        <div className="absolute top-10 left-10">
+                            <p className="font-bold text-white text-4xl sm:text-5xl mb-10">Найти катер</p>
+                            <Link href='/boats'>
+                                <a className="rounded-xl bg-white py-4 px-6 hover:bg-gray-200">
+                                    Начать поиск
+                                </a>
+                            </Link>
+                        </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 rounded-xl p-12 flex flex-col justify-between">
-                        <p className="font-bold text-white text-5xl">Найти яхту</p>
-                        <Link href='/yachts'>
-                            <a className="text-center border rounded-xl bg-white w-40 py-4">
-                                Начать поиск
-                            </a>
-                        </Link>
+                    <div className="h-80 relative">
+                        <img
+                            src='https://ksassets.timeincuk.net/wp/uploads/sites/46/2021/06/GettyImages-1163560314.jpg'
+                            className="rounded-xl w-full h-full object-center object-cover brightness-50"
+                        />
+                        <div className="absolute top-10 left-10">
+                            <p className="font-bold text-white text-4xl sm:text-5xl mb-10">Найти яхту</p>
+                            <Link href='/yachts'>
+                                <a className="rounded-xl bg-white py-4 px-6 hover:bg-gray-200">
+                                    Начать поиск
+                                </a>
+                            </Link>
+                        </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-500 rounded-xl p-12 flex flex-col justify-between">
-                        <p className="font-bold text-white text-5xl">Найти теплоход</p>
-                        <Link href='/ships'>
-                            <a className="text-center border rounded-xl bg-white w-40 py-4 hover:scale-105 hover:shadow-xl transition">
-                                Начать поиск
-                            </a>
-                        </Link>
+                    <div className="h-80 relative">
+                        <img
+                            src='https://media.wired.com/photos/5bb6accf0abf932caf294b18/master/pass/waves-730260985.jpg'
+                            className="rounded-xl w-full h-full object-center object-cover brightness-50"
+                        />
+                        <div className="absolute top-10 left-10">
+                            <p className="font-bold text-white text-4xl sm:text-5xl mb-10">Найти теплоход</p>
+                            <Link href='/ships'>
+                                <a className="rounded-xl bg-white py-4 px-6 hover:bg-gray-200">
+                                    Начать поиск
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )
 }
 
 export default IndexPageFork
-
-
-
-{/* <div className="lg:grid lg:grid-cols-2 lg:gap-6 h-[600px]">
-                    <div className="relative">
-                        <Image
-                            src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                            layout='fill'
-                            objectFit='cover'
-                            alt='Rent Boat image'
-                            className="rounded-xl"
-                        />
-                    </div>
-                    <div className="lg:grid lg:grid-rows-2 lg:gap-6">
-                        <div className="relative">
-                            <Image
-                                src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                                layout='fill'
-                                objectFit='cover'
-                                alt='Rent Boat image'
-                                className="rounded-xl"
-                            />
-                        </div>
-                        <div className="relative">
-                            <Image
-                                src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                                layout='fill'
-                                objectFit='cover'
-                                alt='Rent Boat image'
-                                className="rounded-xl"
-                            />
-                        </div>
-                    </div>
-
-                </div> */}
-
-{/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-row-2 gap-6 lg:h-[600px]">
-
-                    <div className="h-64 sm:h-96 lg:h-full lg:row-span-2 relative">
-                        <div>
-                            <Image
-                                src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                                layout='fill'
-                                objectFit='cover'
-                                alt='Rent Boat image'
-                                className="rounded-xl"
-                            />
-                            <span className="bg-yellow-500 z-100">HEADER</span>
-                        </div>
-                    </div>
-
-                    <div className="h-64 sm:h-96 lg:h-full relative">
-                        <Image
-                            src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                            layout='fill'
-                            objectFit='cover'
-                            alt='Rent Boat image'
-                            className="rounded-xl"
-                        />
-                    </div>
-
-                    <div className="h-64 sm:h-96 lg:h-full relative">
-                        <Image
-                            src='https://spbkater.ru/wp-content/uploads/2019/11/IMG_8481.jpg'
-                            layout='fill'
-                            objectFit='cover'
-                            alt='Rent Boat image'
-                            className="rounded-xl"
-                        />
-
-                    </div>
-                </div> */}
