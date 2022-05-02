@@ -1,9 +1,9 @@
-import ItemCarousel from "../../components/ItemCarousel";
+import ItemCarousel from "../../components/ItemCarousel"
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
 import { GET_YACHT_SLUG } from "../../graphql/queries"
-import PreviousSlideButton from "../../components/elements/PreviousSlideButton";
-import ReactMarkdown from "react-markdown";
-import { BsWallet2, BsPatchCheck, BsPeople, BsTelephoneOutbound } from 'react-icons/bs';
+import PreviousSlideButton from "../../components/elements/PreviousSlideButton"
+import ReactMarkdown from "react-markdown"
+import { BsWallet2, BsPatchCheck, BsPeople, BsTelephoneOutbound } from 'react-icons/bs'
 
 
 export const getStaticPaths = async () => {
@@ -94,7 +94,6 @@ const Yacht = ({ yacht }) => {
             >
               {name}
             </span>
-            <div className="border my-4" />
             <div className="flex items-center my-5">
               <BsPatchCheck className="text-blue-500 w-6 h-6" />
               <span className="text-xl ml-3">{tag}</span>
