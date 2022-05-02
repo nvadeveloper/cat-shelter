@@ -1,7 +1,7 @@
 import ItemCarousel from "../../components/ItemCarousel";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
 import { GET_BOAT_SLUG } from "../../graphql/queries"
-import PreviousSlideButton from "../../components/PreviousSlideButton";
+import PreviousSlideButton from "../../components/elements/PreviousSlideButton";
 import ReactMarkdown from "react-markdown";
 import { BsWallet2, BsPatchCheck, BsPeople, BsTelephoneOutbound } from 'react-icons/bs';
 

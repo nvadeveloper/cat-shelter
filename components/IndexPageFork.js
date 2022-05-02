@@ -1,12 +1,9 @@
-import Image from "next/image"
 import Link from "next/link"
-import WhiteButton from "./elements/WhiteButton"
-
 
 const IndexPageFork = () => {
     return (
         <section>
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-6">
                 <div className="grid gap-6 grid-cols-1 md:grid-cols-2 md:grid-row-2">
                     <div className="md:row-span-2 h-80 md:h-full relative">
                         <img

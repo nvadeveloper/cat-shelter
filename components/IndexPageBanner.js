@@ -3,7 +3,7 @@ import Link from "next/link"
 const IndexPageBanner = () => {
     return (
         <section>
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">
                 <div className="relative rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 text-white p-4 sm:p-10 pb-8 sm:pb-16">
                     {/* <img 
                     src='https://pngimg.com/uploads/boat/boat_PNG36.png'
