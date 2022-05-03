@@ -9,7 +9,7 @@ const ItemCarousel = ({ images }) => {
     return (
         <>
             <Swiper
-                mousewheel={true}
+                // mousewheel={true}
                 loop={true}
                 pagination={{
                     clickable: true,

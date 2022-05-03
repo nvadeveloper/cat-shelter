@@ -1,16 +1,19 @@
 import Link from "next/link"
+import { useState } from "react";
 
 const Header = () => {
 
-    const menus = [
+    const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
+
+    const menuItems = [
         {
             title: 'Главная',
             href: '/',
         },
-        {
-            title: 'Теплоходы',
-            href: '/ships',
-        },
+        // {
+        //     title: 'Теплоходы',
+        //     href: '/ships',
+        // },
         {
             title: 'Катера',
             href: '/boats',
@@ -35,9 +38,9 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="space-x-3 hidden sm:flex">
-                        {menus.map((menu, key) => (
-                            <Link href={menu.href} key={key}>
-                                <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{menu.title}</a>
+                        {menuItems.map((item, key) => (
+                            <Link href={item.href} key={key}>
+                                <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{item.title}</a>
                             </Link>
                         ))}
                         <div className='rounded-xl py-3 px-4 hover:bg-gray-100 cursor-pointer'>
@@ -46,12 +49,15 @@ const Header = () => {
                             </svg>
                         </div>
                     </div>
-                    
+
                     <div className="p-2 flex sm:hidden hover:text-blue-600">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </div>
+
+ 
+
                 </div>
             </div>
         </header>
