@@ -12,7 +12,14 @@ const IndexPageImpression = () => {
                         <p className="font-bold text-xl">Экскурсии <br />на катере</p>
                         <button className="flex hover:text-blue-600">
                             <span>Подробнее</span>
-                            <svg className="mt-[7px] ml-1.5 h-2.5" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.264.293 14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293Z" fill="currentColor"></path></svg>
+                            <svg className="mt-[7px] ml-1.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path
+                                    fill="currentColor"
+                                    fillRule="evenodd"
+                                    d="M9.264.293L14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293z"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
                         </button>
                     </div>
 
@@ -20,7 +27,14 @@ const IndexPageImpression = () => {
                         <p className="font-bold text-xl">Свидание <br />на катере</p>
                         <button className="flex hover:text-blue-600">
                             <span>Подробнее</span>
-                            <svg className="mt-[7px] ml-1.5 h-2.5" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.264.293 14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293Z" fill="currentColor"></path></svg>
+                            <svg className="mt-[7px] ml-1.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path
+                                    fill="currentColor"
+                                    fillRule="evenodd"
+                                    d="M9.264.293L14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293z"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
                         </button>
                     </div>
 
@@ -28,7 +42,14 @@ const IndexPageImpression = () => {
                         <p className="font-bold text-xl">Фотосессия <br />на катере</p>
                         <button className="flex hover:text-blue-600">
                             <span>Подробнее</span>
-                            <svg className="mt-[7px] ml-1.5 h-2.5" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.264.293 14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293Z" fill="currentColor"></path></svg>
+                            <svg className="mt-[7px] ml-1.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path
+                                    fill="currentColor"
+                                    fillRule="evenodd"
+                                    d="M9.264.293L14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293z"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
                         </button>
                     </div>
 
@@ -36,7 +57,14 @@ const IndexPageImpression = () => {
                         <p className="font-bold text-xl">Развод мостов <br />на катерае</p>
                         <button className="flex hover:text-blue-600">
                             <span>Подробнее</span>
-                            <svg className="mt-[7px] ml-1.5 h-2.5" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.264.293 14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293Z" fill="currentColor"></path></svg>
+                            <svg className="mt-[7px] ml-1.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path
+                                    fill="currentColor"
+                                    fillRule="evenodd"
+                                    d="M9.264.293L14 5 9.264 9.707 7.84 8.293 10.148 6H0V4h10.148L7.841 1.707 9.264.293z"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
                         </button>
                     </div>
                 </div>

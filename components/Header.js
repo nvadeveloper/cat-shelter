@@ -56,7 +56,7 @@ const Header = () => {
                     </div>
 
                     <button
-                        className="z-20 flex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
+                        className="z-40 zflex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >
                         <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[10px]" : ""}`} />
@@ -65,7 +65,7 @@ const Header = () => {
                     </button>
 
                     <div 
-                        className={'absolute top-0 left-0 w-full h-full z-10 ' +
+                        className={'absolute top-0 left-0 w-full h-full z-50 ' +
                         (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >

@@ -6,7 +6,7 @@ const Card = ({ images, name, tag, price, person, slug, rating }) => {
     return (
         <Link href={slug}>
             <a className="relative">
-                <span class="z-10 absolute right-3 top-3 rounded-3xl px-3 py-1.5 bg-blue-500 text-white font-medium text-xs">
+                <span className="z-10 absolute right-3 top-3 rounded-3xl px-3 py-1.5 bg-blue-500 text-white font-medium text-xs">
                     5.0
                 </span>
                 <CardСarousel images={images} />
