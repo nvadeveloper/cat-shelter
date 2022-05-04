@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { useState } from "react";
 
+
+
 const Header = () => {
 
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
@@ -28,11 +30,14 @@ const Header = () => {
         },
     ]
 
+    const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300 group-hover:bg-blue-600`;
+
+
     return (
         <header>
             <div className="border-b-2 border-gray-100">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-                    <div>
+                    <div className="">
                         <Link href='/'>
                             <a className="font-bold text-2xl text-blue-600">Rent Boat</a>
                         </Link>
@@ -50,14 +55,28 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="p-2 flex sm:hidden hover:text-blue-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
+                    <button
+                        className="z-20 flex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
+                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
+                    >
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[10px]" : ""}`} />
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? "opacity-0" : ""}`} />
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? "-rotate-45 -translate-y-[10px]" : ""}`} />
+                    </button>
+
+                    <div 
+                        className={'absolute top-0 left-0 w-full h-full z-10 ' +
+                        (mobileMenuIsOpen ? " flex" : " hidden")}
+                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
+                    >
+                        <div className="bg-blue-50 m-2 w-full h-72 rounded-xl space-y-3 flex flex-col sm:hidden py-2">
+                            {menuItems.map((item, key) => (
+                                <Link href={item.href} key={key}>
+                                    <a className='rounded-xl py-3 px-5 hover:text-blue-600'>{item.title}</a>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
-
- 
-
                 </div>
             </div>
         </header>
