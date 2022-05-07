@@ -56,16 +56,16 @@ const Header = () => {
                     </div>
 
                     <button
-                        className="z-40 zflex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
+                        className="z-50 zflex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[10px]" : ""}`} />
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
                         <div className={`${menuLine} ${mobileMenuIsOpen ? "opacity-0" : ""}`} />
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? "-rotate-45 -translate-y-[10px]" : ""}`} />
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? "-rotate-45 -translate-y-[6px]" : ""}`} />
                     </button>
 
                     <div 
-                        className={'absolute top-0 left-0 w-full h-full z-50 ' +
+                        className={'absolute top-0 left-0 w-full h-full z-40 ' +
                         (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >
