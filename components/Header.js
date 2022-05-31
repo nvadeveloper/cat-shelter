@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Container from './elements/Container';
 
 const Header = () => {
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
@@ -53,10 +54,10 @@ const Header = () => {
 
     return (
         <header>
-            <section>
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <Container>
+                <div className="flex items-center justify-between h-20">
                     <Link href="/">
-                        <a className="font-bold text-2xl text-amber-500">Филимоша</a>
+                        <a className="font-bold text-3xl text-amber-500">Филимоша</a>
                     </Link>
 
                     <div className="space-x-3 hidden md:flex">
@@ -108,7 +109,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </Container>
         </header>
     );
 };
