@@ -1,89 +1,116 @@
-import Link from "next/link"
-import { useState } from "react";
-
-
+import Link from 'next/link';
+import { useState } from 'react';
 
 const Header = () => {
+    const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
-    const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
+    const onToggleMobileMenu = () => {
+        setMobileMenuIsOpen((status) => {
+            if (status) {
+                document.body.style.overflow = 'auto';
+            } else {
+                document.body.style.overflow = 'hidden';
+            }
+            return !status;
+        });
+    };
 
-    const menuItems = [
+    const menuText = [
         {
             title: 'Главная',
             href: '/',
         },
-        // {
-        //     title: 'Теплоходы',
-        //     href: '/ships',
-        // },
         {
-            title: 'Катера',
-            href: '/boats',
+            title: 'Найти питомца',
+            href: '/',
         },
         {
-            title: 'Яхты',
-            href: '/yachts',
-        },
-        {
-            title: 'О нас',
+            title: 'О приюте',
             href: '/about',
         },
-    ]
+    ];
 
-    const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300 group-hover:bg-blue-600`;
+    const menuTextMobile = [
+        {
+            title: 'Найти питомца',
+            href: '/',
+        },
+        {
+            title: 'Помочь приюту',
+            href: '/about',
+        },
+        {
+            title: 'О приюте',
+            href: '/about',
+        },
+        {
+            title: 'Главная',
+            href: '/',
+        },
+    ];
 
+    const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300`;
 
     return (
         <header>
-            <div className="border-b-2 border-gray-100">
+            <section>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-                    <div className="">
-                        <Link href='/'>
-                            <a className="font-bold text-2xl text-blue-600">Rent Boat</a>
-                        </Link>
-                    </div>
-                    <div className="space-x-3 hidden sm:flex">
-                        {menuItems.map((item, key) => (
+                    <Link href="/">
+                        <a className="font-bold text-2xl text-amber-500">Филимоша</a>
+                    </Link>
+
+                    <div className="space-x-3 hidden md:flex">
+                        {menuText.map((item, key) => (
                             <Link href={item.href} key={key}>
-                                <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{item.title}</a>
+                                <a className="rounded-xl py-3 px-4 hover:bg-gray-100 ease-in-out duration-200">
+                                    {item.title}
+                                </a>
                             </Link>
                         ))}
-                        <div className='rounded-xl py-3 px-4 hover:bg-gray-100 cursor-pointer'>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 22 22" stroke="currentColor" strokeWidth={2}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                            </svg>
-                        </div>
+
+                        <Link href="/">
+                            <a className="rounded-xl py-3 px-4 bg-amber-500 text-white hover:bg-amber-600 hover:scale-105 ease-in-out duration-200">
+                                Помочь приюту
+                            </a>
+                        </Link>
                     </div>
 
                     <button
-                        className="z-50 zflex flex-col h-10 w-6 rounded-xl justify-center items-center group sm:hidden"
-                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
-                    >
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? "opacity-0" : ""}`} />
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? "-rotate-45 -translate-y-[6px]" : ""}`} />
+                        className="h-10 w-6 rounded-xl justify-center items-center group md:hidden z-30"
+                        onClick={onToggleMobileMenu}>
+                        <div
+                            className={`${menuLine} ${
+                                mobileMenuIsOpen ? 'rotate-45 translate-y-[6px]' : ''
+                            }`}
+                        />
+                        <div className={`${menuLine} ${mobileMenuIsOpen ? 'opacity-0' : ''}`} />
+                        <div
+                            className={`${menuLine} ${
+                                mobileMenuIsOpen ? '-rotate-45 -translate-y-[6px]' : ''
+                            }`}
+                        />
                     </button>
 
-                    <div 
-                        className={'absolute top-0 left-0 w-full h-full z-40 ' +
-                        (mobileMenuIsOpen ? " flex" : " hidden")}
-                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
-                    >
-                        <div className="bg-blue-50 m-2 w-full h-72 rounded-xl space-y-3 flex flex-col sm:hidden py-2">
-                            {menuItems.map((item, key) => (
+                    <div
+                        className={
+                            'fixed inset-0 w-full h-full bg-white md:hidden z-20' +
+                            (mobileMenuIsOpen ? ' flex' : ' hidden')
+                        }
+                        onClick={onToggleMobileMenu}>
+                        <div className="w-full space-y-3 flex flex-col md:hidden text-center py-36">
+                            {menuTextMobile.map((item, key) => (
                                 <Link href={item.href} key={key}>
-                                    <a className='rounded-xl py-3 px-5 hover:text-blue-600'>{item.title}</a>
+                                    <a className="text-3xl px-4 hover:text-gray-500 font-black font-montserrat">
+                                        {item.title}
+                                    </a>
                                 </Link>
                             ))}
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </header>
-    )
-}
+    );
+};
 
-export default Header
-
-
-
+export default Header;
