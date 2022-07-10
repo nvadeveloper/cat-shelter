@@ -1,15 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: [
-      'res.cloudinary.com',
-      'spbkater.ru'
-    ],
-  },
-  experimental: {
-    scrollRestoration: true,
-  },
-}
+    reactStrictMode: true,
+    images: {
+        domains: ['sun1-20.userapi.com'],
+    },
+    experimental: {
+        scrollRestoration: true,
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
