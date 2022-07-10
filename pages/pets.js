@@ -2,7 +2,9 @@ import Image from 'next/image';
 
 const Pets = () => {
     return (
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8  mb-8">
+            <h1 className="font-bold text-2xl mb-8">Питомцы</h1>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                     <div className="w-full h-64 sm:h-96 relative object-cover	">
@@ -11,6 +13,7 @@ const Pets = () => {
                             className="rounded-lg"
                             layout="fill"
                             objectFit="cover"
+                            alt="image"
                         />
                     </div>
                     <div className="mt-2 flex items-center justify-between">

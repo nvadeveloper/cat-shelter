@@ -21,7 +21,7 @@ const menuItems = [
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-100 mt-10 py-6 text-sm text-gray-600">
+        <footer className="mt-10 py-6 text-sm text-gray-600 border-t bg-[#fafafa] border-[#eaeaea]">
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col sm:flex-row">
                 <p className="pr-4">© ФИЛИМОША, 2022</p>
                 <ul className="flex space-x-4">
