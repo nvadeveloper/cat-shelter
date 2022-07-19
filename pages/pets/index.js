@@ -25,8 +25,9 @@ const Pets = () => {
                     <div className="mt-2 flex items-center justify-between">
                         <p className="text-2xl font-bold">Чивас</p>
                         <div className="flex space-x-2">
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Мальчик</span>
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Один год</span>
+                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">
+                                Один год
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -49,8 +50,9 @@ const Pets = () => {
                     <div className="mt-2 flex items-center justify-between">
                         <p className="text-2xl font-bold">Чивас</p>
                         <div className="flex space-x-2">
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Мальчик</span>
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Один год</span>
+                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">
+                                Один год
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -73,8 +75,9 @@ const Pets = () => {
                     <div className="mt-2 flex items-center justify-between">
                         <p className="text-2xl font-bold">Чивас</p>
                         <div className="flex space-x-2">
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Мальчик</span>
-                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">Один год</span>
+                            <span className="py-2 px-3 bg-gray-100 rounded-full text-sm">
+                                Один год
+                            </span>
                         </div>
                     </div>
                 </div>
