@@ -50,7 +50,7 @@ const Header = () => {
                         {menuItems.map((item, key) => (
                             <li key={key}>
                                 <Link href={item.href}>
-                                    <a className="rounded-xl p-4 hover:bg-gray-100 ease-in-out duration-200">
+                                    <a className="rounded-full px-3 py-3 hover:bg-gray-100 ease-in-out duration-200">
                                         {item.title}
                                     </a>
                                 </Link>
